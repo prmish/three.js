@@ -1,0 +1,42 @@
+//--------
+
+var geometry = new THREE.SphereGeometry(10, 20, 20);
+var material = new THREE.MeshLambertMaterial({ color: 0xffffff, wireframe: false });
+var s1 = new THREE.Mesh(geometry, material);
+scene.add(s1);
+s1.position.set(0, 65, 0);
+s1.castShadow = true;
+
+var geometry = new THREE.SphereGeometry(20, 20, 20);
+var material = new THREE.MeshLambertMaterial({ color: 0xffffff, wireframe: false });
+var s2 = new THREE.Mesh(geometry, material);
+scene.add(s2);
+s2.position.set(0, 40, 0);
+
+var geometry = new THREE.SphereGeometry(30, 30, 30);
+var material = new THREE.MeshLambertMaterial({ color: 0xffffff, wireframe: false });
+var s3 = new THREE.Mesh(geometry, material);
+scene.add(s3);
+s3.position.set(0, 0, 0);
+
+var geometry = new THREE.SphereGeometry(1, 20, 20);
+var material = new THREE.MeshBasicMaterial({ color: 0x000000, wireframe: false });
+var e1 = new THREE.Mesh(geometry, material);
+scene.add(e1);
+e1.position.set(5, 70, 7);
+
+var geometry = new THREE.SphereGeometry(1, 20, 20);
+var material = new THREE.MeshBasicMaterial({ color: 0x000000, wireframe: false });
+var e2 = new THREE.Mesh(geometry, material);
+scene.add(e2);
+e2.position.set(-5, 70, 7);
+
+var geometry = new THREE.ConeGeometry(2, 20, 20);
+var material = new THREE.MeshLambertMaterial({ color: 0xFFA500, wireframe: false });
+var n = new THREE.Mesh(geometry, material);
+scene.add(n);
+n.position.set(0, 65, 14);
+n.rotation.z -= 20.5;
+n.rotation.y -= 20.4;
+
+//--------
